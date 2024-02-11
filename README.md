@@ -1,6 +1,6 @@
 <h1 align="center">Projet NSI de Cryptologie</h1></p>
 
-<p align="center"> <img src="/home/nap0/Documents/Desktop/snake/NSI/Cryptologie/NSI_Cryptologie_logo.png"></p>
+<p align="center"> <img src="https://github.com/Grogny/NSI-Cryptologie/blob/main/NSI_Cryptologie_logo.png"></p>
 
 
 <p align="center"> <strong>NSI Cryptologie</strong> est un projet collaboratif à 3 : @Fare-spec , @YottGG et @Grogny , qui permet d'encrypter et de décrypter un message en <strong>AES</strong>, <strong>RSA</strong> et en <strong>Salsa20</strong> !</p> 
