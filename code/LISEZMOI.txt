@@ -1,2 +1,2 @@
-Le code de notre programme est réparti en 4 dossiers qui comportent chacun de nos scripts en lien avec nos différentes méthodes de chiffrement ainsi que le programme Tkinter.
+Le code de notre programme qui comportent chacun de nos scripts en lien avec nos différentes méthodes de chiffrement ainsi que le programme Tkinter.
 N'oubliez pas de suivre les instructions disponibles sur le "README" afin d'utiliser le programme comme il se doit.
