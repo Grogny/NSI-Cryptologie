@@ -1,7 +1,8 @@
 import random
 import math
 
-def estprime(p):
+def test_miller_rabin(p):
+    "Implémentation du test de primalité de Miller Rabin avec p : int (voir compte rendu)"
     k=0
     p_1=p-1
     
@@ -19,6 +20,7 @@ def estprime(p):
             return(var)
  
 def gcd_etendu(a, b):
+    "Implémentation de l'algorithme étendu d'euclide avec a : int; b : int (voir compte rendu)"
     if b == 0:
         return a, 1, 0
     else:
@@ -31,8 +33,8 @@ def trouve_d(e, phi):
     return d
 
    
-    
 def expmodulaire(base, exp, module):
+    """Implémentation de l'algorithme d'exponentiation modulaire avec base : int; exp : int; module : int (voir compte rendu)"""
     result = 1
     while exp > 0:
         if exp & 1 > 0:
@@ -43,43 +45,46 @@ def expmodulaire(base, exp, module):
 
 
 def genclef() :
+    """Programme en charge de la génération des clefs (voir compte rendu)"""
     p = random.randint(10**8, 10**9)
     q = random.randint(10**8, 10**9)
     
-    while not estprime(p)==True :
+    while not test_miller_rabin(p)==True :
         p = random.randint(10**8, 10**9)
         
-    while not estprime(q)==True :
+    while not test_miller_rabin(q)==True :
         q = random.randint(10**8, 10**9)
 
-    global n
-    n = p*q
+    global module_chiffrement
+    module_chiffrement = p*q
     
     global phi
     phi = (p-1)*(q-1)
     
-    global e
-    e = 65537
+    global exposant_chiffrement
+    exposant_chiffrement = 65537
     
-    global d
-    d = trouve_d(e, phi)
+    global exposant_déchiffrement
+    exposant_déchiffrement = trouve_d(exposant_chiffrement, phi)
     
-    clef_pub = [n,e]
-    clef_prv = [n,d]
+    clef_pub = [module_chiffrement,exposant_chiffrement]
+    clef_prv = [module_chiffrement,exposant_déchiffrement]
     
     return(clef_pub, clef_prv)
 
 def chiffrement(m) :
+    """Chiffrement du message ..."""
     m_1 = ord(m)
-    c = expmodulaire(m_1, e, n)
+    c = expmodulaire(m_1, exposant_chiffrement, module_chiffrement)
     return c
 
 def dechiffrement(c, d, n) :
+    """Déchiffrement du message ..."""
     m = expmodulaire(c,d,n)
     return chr(m)
 
-g = int(input("Souhaitez-vous chiffrer votre message (select 1) ou le déchiffrer (select 2) ? "))
-if g == 1:
+choix = int(input("Souhaitez-vous chiffrer votre message (select 1) ou le déchiffrer (select 2) ? "))
+if choix == 1:
     chiff = input("Entrez votre message : ")
     m = []
     count=0
@@ -90,9 +95,8 @@ if g == 1:
         f = chiffrement(m[i])
         count+=1
         print(f'Lettre {count} : Clef privée, Clef publique = {result}, et le chiffrement donne : {f}')
-
 else :
-    c = int(input("Quel message souhaitez-vous déchiffrer ? "))
-    d = int(input("Quel exposant de déchiffrement avez-vous ?"))
-    n = int(input("Quel est votre module de chiffrement ?"))
+    c = int(input("Quel code souhaitez-vous déchiffrer ? "))
+    d = int(input("Quel exposant de déchiffrement avez-vous ? "))
+    n = int(input("Quel est votre module de chiffrement ? "))
     print(f'Votre message est {dechiffrement(c, d, n)}')
