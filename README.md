@@ -3,7 +3,7 @@
 <p align="center"> <img src="https://github.com/Grogny/NSI-Cryptologie/blob/main/NSI_Cryptologie_logo.png"></p>
 
 
-<p align="center"> <strong>NSI Cryptologie</strong> est un projet collaboratif à 3 : <a href="https://github.com/Fare-spec"> Fare-spec </a>, <a href="https://github.com/YottGG"> YottGG </a> et <a href="https://github.com/Grogny"> Grogny </a>, qui permet de chiffrer et de déchiffrer un message en <strong>XOR</strong>, <strong>Hill</strong> et en <strong>RSA</strong> !</p> 
+<p align="center"> <strong>NSI Cryptologie</strong> est un projet collaboratif à 3 : <a href="https://github.com/Fare-spec"> Fare-spec </a>, <a href="https://github.com/YottGG"> YottGG </a> et <a href="https://github.com/Grogny"> Grogny </a>. Qui permet de chiffrer et de déchiffrer un message en <strong>XOR</strong>, <strong>Hill</strong> et en <strong>RSA</strong> !</p>
 
 
 <h2> Unpeu Plus Sur Notre Sujet : </h2>
