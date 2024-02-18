@@ -106,5 +106,3 @@ python3 main.py
 - [NumPy](https://github.com/numpy)
 - random
 - Tkinter
-
----
