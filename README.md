@@ -1,0 +1,61 @@
+<h1 align="center">Projet NSI de Cryptologie</h1></p>
+
+<p align="center"> <img src="https://github.com/Grogny/NSI-Cryptologie/blob/main/NSI_Cryptologie_logo.png"></p>
+
+
+<p align="center"> <strong>NSI Cryptologie</strong> est un projet collaboratif à 3 : [Fare-spec](https://github.com/Fare-spec) , [YottGG](https://github.com/YottGG) et [Grogny](https://github.com/Grogny) , qui permet d'encrypter et de décrypter un message en <strong>...</strong>, <strong>Hill</strong> et en <strong>RSA</strong> !</p> 
+
+---
+
+<h2> Unpeu Plus Sur Notre Sujet : </h2>
+
+### Qu'est ce que la cryptologie ?
+
+Du grec kryptos (caché) et logos (science), « cryptologie » signifie littéralement science du secret et a pour objet de cacher les informations d'un message. Elle englobe la cryptographie : l'écriture secrète, et la cryptanalyse :  l'analyse de la cryptographie.
+
+©futura-sciences.com
+
+### Cryptographie et Cryptanalyse
+
+La cryptographie est une des disciplines de la cryptologie s'attachant à protéger des messages (assurant confidentialité, authenticité et intégrité) en s'aidant souvent de secrets ou clés.
+
+La cryptographie se scinde en deux parties nettement différenciées :
+
+- d'une part la cryptographie à clef secrète, encore appelée symétrique ou bien classique.
+- d'autre part la cryptographie à clef publique, dite également asymétrique ou moderne.
+
+La cryptanalyse est la branche de la cryptologie qui étudie la manière de casser des codes et des cryptosystèmes. Elle développe des techniques pour casser les systèmes cryptographiques
+
+©Wikipedia, ©developer.mozilla.org
+
+### ..., HILL et RSA
+
+...
+
+En cryptographie symétrique, le <strong>chiffrement de Hill</strong> est un modèle simple d'extension du chiffrement affine à un bloc. Ce système étudié par Lester S. Hill, utilise les propriétés de l'arithmétique modulaire et des matrices.
+
+Le chiffrement <strong>RSA</strong> (nommé par les initiales de ses trois inventeurs : Ronald <strong>R</strong>ivest, Adi <strong>S</strong>hamir et Leonard <strong>A</strong>dleman est un algorithme de cryptographie asymétrique, très utilisé dans le commerce électronique, et plus généralement pour échanger des données confidentielles sur Internet.
+
+©Wikipedia
+
+<h2> Notre Programme : </h2>
+
+### Projet et Objectif
+
+Notre projet est donc un projet de cryptologie dans lequel nous devons coder un programme en [Python](https://github.com/python) permettant de Crypter et Décrypter un message avec 3 méthode différentes (En l'occurence nous avons choisi <strong>AES</strong>, <strong>RSA</strong> et <strong>Salsa20</strong>).
+
+### Réalisation
+
+Le code est reparti en 3 parties :
+
+- Fare-spec / Elouan : Chiffrement XOR
+- Grogny / Alexis : Chiffrement de Hill
+- YottGG / Eliott: RSA
+
+Chacun des collaborateurs à coder deux fonctions. Une fonction permettant de crypter les messages (Cryptographie) et une fonction permettant de décrypter les messages. Par la suite ces 6 fonctions ont été rassemblées dans un seul programme qui permet de répondre à l'objectif demandé.
+
+Ce programme se présente sur la forme d'une interface graphique réalisé avec Tkinter dans laquel nous devons choisir notre méthode de chiffrement, puis chiffrer / déchiffrer un message.
+
+### 
+
+
