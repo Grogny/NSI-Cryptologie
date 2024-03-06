@@ -83,4 +83,4 @@ if __name__ == "__main__":
     message_dechiffre = dechiffrement_hill(message_chiffre, matrice_cle)
 
     print(f"Message chiffré : {message_chiffre}")
-    print(f"Message déchiffré :{message_dechiffre}")
+    print(f"Message déchiffré : {message_dechiffre}")
