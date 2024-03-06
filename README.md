@@ -6,7 +6,7 @@
 <p align="center"> <strong>NSI Cryptologie</strong> est un projet collaboratif à 3 : <a href="https://github.com/Fare-spec"> Fare-spec </a>, <a href="https://github.com/YottGG"> YottGG </a> et <a href="https://github.com/Grogny"> Grogny </a>. Qui permet de chiffrer et de déchiffrer un message en <strong>XOR</strong>, <strong>Hill</strong> et en <strong>RSA</strong> !</p>
 
 
-<h2> Unpeu Plus Sur Notre Sujet : </h2>
+<h2> Un peu Plus Sur Notre Sujet : </h2>
 
 ### Qu'est ce que la cryptologie ?
 
